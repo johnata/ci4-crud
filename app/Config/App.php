@@ -5,7 +5,7 @@ namespace Config;
 use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
-{
+{    
     /**
      * --------------------------------------------------------------------------
      * Base Site URL
@@ -16,9 +16,16 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
+    public $baseURL;
+    public function __construct()
+    {
+        parent::__construct();
+
+        // Base Site URL by default is set to localhost:8080
+        $this->baseURL = env('app.baseURL', 'http://localhost:8080/');
+    }
     //http://localhost:8080/assets/css/datatables.min.css
     // public string $baseURL = 'http://localhost:8080/';
-    public string $baseURL = 'http://ci4-crud.local/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
