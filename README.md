@@ -24,6 +24,12 @@ database.default.DBPrefix =
 database.default.port = 3306
 ```
 
+## Composer
+
+```bash
+composer install
+```
+
 ## Migrate
 
 ```bash
@@ -40,4 +46,12 @@ php spark db:seed FakeUserSeeder
 
 ```bash
 php spark serve
+```
+
+### Expected result
+
+```bash
+CodeIgniter v4.6.0 Command Line Tool - Server Time: 2025-04-09 12:58:04 UTC+00:00
+
+CodeIgniter development server started on http://localhost:8080
 ```
