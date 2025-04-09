@@ -3,7 +3,7 @@
 ## Clone
 
 ```bash
-git@github.com:johnata/ci4-crud.git
+git clone git@github.com:johnata/ci4-crud.git
 ```
 
 ## .env
